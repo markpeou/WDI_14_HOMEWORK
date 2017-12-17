@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  margin-left: ;
+}
+
+
+header > h1,h2 {
+  display: inline-block;
+}
+
+nav ul {
+  padding: 0;
+}
+
+ .headerNav li{
+  width: 100%;
+  display: inline-block;
+  list-style-type: none;
+  margin:0;
+  padding:0px;
+  padding-left:10px;
+  background-color: black;
+  color: white;
+  border-right: 1px solid white;
+}
+
+main {
+  display: inline-block;
+  width: 60%;
+}
+article {
+  padding: 20px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3%;
+}
+
+article > img {
+  width: 100%;
+}
+
+aside {
+  padding: 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 27%;
+}
+
+.footerNav li {
+  display: inline-block;
+  background-color: ;
+}

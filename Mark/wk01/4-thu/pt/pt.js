@@ -3,10 +3,36 @@
 // write a for loop that displays the 4 stops that the passenger will be taking.
 //
 //
-var trip = ["Flagstaff","Melbourne Central","Parliament","Richmond","Kooyong","Tooronga"]
 
-for (var trip = 0; trip < 5; trip++) {
-  console.log(trip)
+// train lines
+var lines = {
+	alamein: ["Flinders Street", "Richmond", "East Richmond", "Burnley", "Hawthorn", "Glenferrie"],
+  glenWaverly: ["Flagstaff", "Melbourne Central", "Parliament", "Richmond", "Kooyong", "Tooronga"],
+  sandringham: ["Southern Cross", "Richmond", "South Yarra", "Prahran", "Windsor"]
 }
 
-//console log is displaying the index numbers. need to figure out how to display the string value to notify user about the train stations in the journey. 
+// user input
+var origin = 'Richmond';
+var destination = 'Windsor';
+
+// calculating indexes
+var originIndex = lines.sandringham.indexOf(origin);
+var destIndex = lines.sandringham.indexOf(destination);
+
+// calculating number of stopss
+debugger
+if (originIndex > -1 && destIndex > -1) {
+  var numberOfStops = destIndex - originIndex;
+}
+
+// creating journey
+var journey = lines.sandringham.slice(originIndex, destIndex + 1)
+
+var outputToUser = function() {
+	console.log("origin: " + origin);
+	console.log("destination: " + destination);
+	console.log(numberOfStops + " stops");
+	console.log(journey.join(" ---> "))
+}
+
+outputToUser();

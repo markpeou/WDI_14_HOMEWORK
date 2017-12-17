@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Online Bank</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+    <img src="money.png" alt="logo">
+    <h1>Online Bank</h1>
+    </header>
+    <main>
+      <section class="savings">
+        <h1>Savings Account</h1>
+        <h2>Balance: $<span id='savingsBalance'>0</1span></h2>
+        <input id='savingAmount' type="text">
+        <br>
+        <button class="withdraw" type="submit">Withdraw</button>
+        <button class='deposit' type="submit">Deposit</button>
+      </section>
+
+      <section class="checkings">
+        <h1>Checking Account</h1>
+        <h2>Balance: $<span id='checkingBalance'>0</1span></h2>
+        <input id='checkingAmount' type="text">
+        <br>
+        <button class="checkWithdraw" type="submit">Withdraw</button>
+        <button class='checkDeposit' type="submit">Deposit</button>
+      </section>
+    </main>
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+
+      <script src="main.js"></script>
+  </body>
+</html>
