@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212a38;
+  color: #f4f6f9;
+  font-family: 'Coustard', serif;
+  text-align: center;
+  padding-top: 5%;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+h1 {
+  display:inline-block;
+  text-align: center;
+  padding-left:0;
+}
+
+img {
+  display:inline-block;
+  height: 10%;
+  width: 10%;
+  /*padding-right: 30%;*/
+  /*padding-top: 5%;*/
+}

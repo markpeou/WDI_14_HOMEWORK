@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/stylesheets/movie.css">
+        <link href="https://fonts.googleapis.com/css?family=Coustard|Julius+Sans+One" rel="stylesheet">
+    <title>Movie Result</title>
+  </head>
+  <body>
+
+    <div class="">
+      <img src="<%=@poster%>">
+    </div>
+
+    <aside class="">
+      <h1><b><%= @title %></b></h1>
+      <h2><%= @year %></h2>
+      <p><i><%= @genre %></i></p>
+      <p>Starring: <%= @cast %></p>
+      <p><i><%= @plot %></i></p>
+
+    </aside>
+
+    <!-- <a href="http://localhost:4567/">Search Again</a> -->
+    <form action="/">
+      <button>Back to Search</button>
+
+    </form>
+  </body>
+</html>
