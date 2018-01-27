@@ -6,7 +6,11 @@ Rails.application.routes.draw do
 
 
 
-  resource :house, only: [:index, :show]
+
+
+
+
+  resources :houses, only: [:index, :show]
   resources :students, only: [:index, :show]
 
 end
