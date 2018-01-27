@@ -24,4 +24,8 @@ out_file.puts("cat","dog","rabbit")
 #...
 out_file.close
 
+File.foreach("data.txt").with_index do |line,line_num|
+  puts "#{line_num}:#{line}"
+end
+
 puts ('end of program')

@@ -20,10 +20,9 @@ var originIndex = lines.sandringham.indexOf(origin);
 var destIndex = lines.sandringham.indexOf(destination);
 
 // calculating number of stopss
-debugger
-if (originIndex > -1 && destIndex > -1) {
-  var numberOfStops = destIndex - originIndex;
-}
+
+var numberOfStops = destIndex - originIndex;
+
 
 // creating journey
 var journey = lines.sandringham.slice(originIndex, destIndex + 1)
@@ -31,8 +30,8 @@ var journey = lines.sandringham.slice(originIndex, destIndex + 1)
 var outputToUser = function() {
 	console.log("origin: " + origin);
 	console.log("destination: " + destination);
-	console.log(numberOfStops + " stops");
-	console.log(journey.join(" ---> "))
+	console.log("number of stops: " + numberOfStops );
+	console.log(journey.join("-->"))
 }
 
 outputToUser();
