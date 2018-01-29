@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Copro</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+   <%= session[:user_id] %>
+      <form action="/session" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <button>Logout</button>
+      </form>
+  
+    <%= yield %>
+  </body>
+</html>

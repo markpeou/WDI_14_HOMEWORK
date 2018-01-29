@@ -1,0 +1,12 @@
+
+<div class="container">
+
+  <% @projects.each do |project| %>
+  <div class="project">
+    <a href="/show/<%= project.id %>">
+      <img src="<%= project.preview.url%>" alt="">
+    </a>
+    <h2><%= project.title%></h2>
+  </div>
+  <% end %>
+</div>

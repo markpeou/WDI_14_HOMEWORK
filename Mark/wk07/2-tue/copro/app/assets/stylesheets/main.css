@@ -1,0 +1,61 @@
+label, input {
+ display: block;
+}
+
+.container {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.wrapper {
+  width: 300px;
+  position: relative;
+  border: 10px solid black;
+  position: relative;
+}
+
+.wrapper span {
+  position: absolute;
+  right:10px;
+  top: 10px;
+  font-size: 3em;
+}
+
+.wrapper img {
+
+}
+
+.project {
+  width: 50%;
+  background: mistyrose;
+}
+
+.project h2 {
+  display: none;
+}
+.project img {
+ display: block;
+}
+
+/* if screen is bigger than 400px do following */
+@media (min-width: 400px){
+ .project {
+   width: 33.333333%;
+ }
+}
+
+@media (min-width: 700px){
+ .project {
+   width: 33.333333%;
+ }
+  .project h2 {
+    display: block;
+  }
+}
+
+
+@media (min-width: 1000px){
+ .project {
+   width: 25%;
+ }
+}
