@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="pokemons.scss">
+  </head>
+  <body>
+    <h2>Pokedex</h2>
+
+    <%=@pokemon.each do |pokemon|%>
+    <p><%= pokemon.nickname%></p>
+    <%end%>
+
+
+
+
+  <footer>
+      <form action="/show" method="post">
+        <input type="hidden" name="authenticity_token"
+        value="<%= form_authenticity_token %>">
+        <label for="">Nickname:</label>
+        <input type="text" name="nickname">
+        <label for="">Species:</label>
+        <input type="text" name="species">
+        <label for="">Level:</label>
+        <input type="text" name="level">
+
+        <button>create</button>
+
+    </form>
+  </footer>
+  </body>
+</html>
