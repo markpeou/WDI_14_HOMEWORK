@@ -18,8 +18,72 @@
 # User should be able to choose intended functionality
 # Optional Extensions
 # Does your calculator allows addition of more then 2 numbers in one go? eg: 2 + 3 + 4
+puts "Calculator"
 
+puts "what would you like to do?
+- add
+- subtract
+- divide
+- multiply
+- square_root"
 
-puts "what do you wanna add?"
-number = gets.chomp
-puts = number
+operator = gets.chomp
+case operator
+  when 'add'
+    def add
+      puts "what do you wanna add?"
+      n1 = gets.to_i
+      puts " + "
+      n2 = gets.to_i
+      puts = " = "
+      answer = n1 + n2
+      puts "the answer is #{answer}"
+    end
+    add()
+
+  when 'subtract'
+    def subtract
+      puts "what do you want to subract?"
+      n1 = gets.to_i
+      puts "-"
+      n2 = gets.to_i
+      puts "="
+      answer = n1 - n2
+      puts "the answer is #{answer}"
+    end
+    substract()
+
+  when 'multiply'
+    def multiply
+      puts "what do you want to multiply?"
+      n1 = gets.to_i
+      puts "*"
+      n2= gets.to_i
+      puts "="
+      answer = n1 * n2
+      puts "the answer is #{answer}"
+    end
+    multiply()
+
+  when 'divide'
+    def divide
+      puts "what do you want to divide?"
+      n1 = gets.to_i
+      puts "/"
+      n2 = gets.to_i
+      puts "="
+      answer = n1 / n2
+      puts "the answer is #{answer}"
+    end
+    divide()
+
+  when 'square_root'
+    def square_root
+      puts "what is the square root of...?"
+      n1 = gets.to_i
+      answer = Math.sqrt(n1)
+      puts "#{answer}"
+      square_root()
+    end
+
+  end
