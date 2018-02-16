@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width:100%;
+  padding-left: 10%;
+  background-color: #212a38;
+  color: #f4f6f9;
+  font-family: 'Julius Sans One', sans-serif;
+
+
+}
+
+div {
+display:inline-block;
+width: 40%;
+margin: 0;
+
+}
+
+img {
+  margin-top: 10%;
+  border: #e1e9f7 1px solid;
+
+
+
+}
+
+aside {
+  display:inline-block;
+  width: 48%;
+  margin: 0;
+
+
+}
+
+button {
+  margin-left: 40%;
+}

@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width:100%;
+  padding-left:10%;
+  background-color: #212a38;
+  color: #f4f6f9;
+  font-family: 'Julius Sans One', sans-serif;
+
+}
+
+.posters {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+ul {
+display: flex;
+flex-direction: column;
+}
+
+li {
+  align-items: center;
+  text-align: center;
+  }
+
+a {
+  text-decoration: none;
+  color: white;
+  display:inline-block;
+}
+
+img {
+  display: flex;
+  align-items: center;
+  margin: 5%;
+  margin-bottom: 0;
+  border: #e1e9f7 1px solid;
+
+}
