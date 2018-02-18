@@ -79,20 +79,21 @@ ninja_turtle = [{
 }]
 
 # Add a key age to ninja_turtle. Set it to whatever numerical value you'd like.
-ninja_turtle.merge! (:age => 300)
 # # Your answer here
+ninja_turtle[:age] = 300
 # Remove the radical key-value pair from ninja_turtle.
-#
 # # Your answer here
+ninja_turtle.delete(:radical)
 # Add a key pizza_toppings to ninja_turtle. Set it to an array of strings (e.g., ["cheese", "pepperoni", "peppers"]).
-#
 # # Your answer here
+ninja_turtle[:pizza_toppings] = ["cheese", "pepperoni","peppers"]
 # Access the first element of pizza_toppings.
-#
 # # Your answer here
-# Produce an array containing all of ninja_turtle's keys using a method. The Ruby documentation might help.
+ninja_turtle[:pizza_toppings][0]
 
+# Produce an array containing all of ninja_turtle's keys using a method. The Ruby documentation might help.
 # Your answer here
+array_keys = ninja_turtle.keys
 # Bonus
 # Print out each key-value pair in the following format - "KEY's is equal to VALUE" -- using a method. The Ruby documentation might help.
 
