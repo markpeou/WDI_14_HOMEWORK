@@ -36,11 +36,12 @@ const compliments = [
     resp.render('hello', {
         compliments: _.sample(compliments),
         colors: _.sample(colors)
+
     })
   })
 
   app.get('/:name',function(req,resp) {
-    resp.render('hello', {
+    resp.render('name', {
       name: req.params.name,
       compliments: _.sample(compliments),
       colors: _.sample(colors)
